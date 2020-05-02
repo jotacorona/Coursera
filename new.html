@@ -1,6 +1,23 @@
 <!doctype html>
 <html>
   <head>
+    <style>
+    .high {
+      background-color: rgba(255, 153, 36, 0.7);
+    }
+    .low {
+      background-color: rgba(152, 255, 36, 0.7);
+      color: blue;
+    }
+    #perro {
+      color: white;
+      background-color: black;
+    }
+
+
+
+
+    </style>
   </head>
 
   <body>
@@ -9,26 +26,45 @@
       <p> Indice: </p>
       <ul>
         <li><a href="#se1">Seccion 1</a>
-        <li><a href="#se2">Seccion 2</a>
+        <li><a href="#se2" class="muyo">Seccion 2</a>
         <li><a href="#se3">Seccion 3</a>
         <li><a href="subpa.html">Go to second</a>
+        <li><a href="index.html">GO back to INDEX</a>
       </ul>
     </section>
 
     <section>
-      <p id="se1">Que onda esta es la sección 1. Aquí podemos hablar de todo.
-        Esto es texto y queda raro  escribirlo así ya que en python el texto se marcaba
+      <p id="se1" class="high">Que onda esta es la sección 1. Aquí podemos hablar de todo.
+        Esto es texto y queda raro  escribirlo así ya que en python el texto se marcaba.
+        The class selector does require a little bit of a change to your HTML document
+        in that each element that you want that class applied to has to have a attribute class
+        equal to the class name. So in this case we have a p, the paragraph tag and div
+        tag both have the attribute class="blue" and therefore, their content or their
+        text content will be colored blue. Notice that a different paragraph that is not
+        marked with attribute class="blue" is completely unaffected by this.
+        Note the differences between the way you define a class and then the
+        way you use the class. You define the class always with a dot in front of a name.
+        There cannot be any space between the dot and the name of the class in case
+        no space between the dot and the word blue. However, when you use the class,
+        you don't use the dot in its name, you just use its name. So here we have the
+        paragraph tag with class="blue" without the dot in front of it.
       </p>
       <hr>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <p id="se2">tacabum</p>
+      <br><br><br>
+      <p id="se2" class="low">As an example, if we specified p paragraph and color blue,
+        that means every paragraph in the HTML document will have its content's
+        text be blue. Obviously, this really doesn't affect any other elements
+        that contain text in them. For example, we can have a div element that
+        contains text but that text will not be affected by our CSS rule that
+        specifies that the paragraph tag should have content text colored blue.</p>
       <hr>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <p id="se3">Andrea está hablando por telefono con fran y nuria. Son las 3.
+      <br><br><br>
+      <p id="se3" class="high">Andrea está hablando por telefono con fran y nuria.
+        <a id="perro">Son las 3.</a>
         Estoy estudiando. Estamos de cuarentena. Bla bla bla. Más relleno. Musica.
         Tengo hambre.
       </p>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br>
 
     <section>
       <a href="#top">back to top</a>
