@@ -3,26 +3,147 @@
   <head>
     <meta charset="utf-8">
     <title>Selectores</title>
-    <style>
-      a:hover div:nth-child(5){
-        font-size: 24px;
-      }
-    </style>
 
+    <style>
+      h4 {
+        font-style: italic;
+        text-align: right;
+      }
+      
+      p {
+        color: red;
+      }
+      .class_selector {
+        color:brown
+      }
+      #ID_selector_marc {
+        color:green
+      }
+
+      div.uno, b{
+        color: yellow
+      }
+      p.Elm-w-class {
+        color: purple
+      }
+      section > p {
+        color:orange
+      }
+      div > p {
+        color:pink
+      }
+
+    </style>
   </head>
 
   <body>
-    <a href="new.html">Back to New</a>
-    <a href="index.html">Back to Index</a>
-
     <h1> Selectores </h1>
-    <h2>Indice
-    <ul>
-      <ol> Tipos de selectores:
-        <li>Element selector
-        <li>Class selector
-        <li>ID selector
+    <a href="new.html">Back to NEW</a><br>
+    <a href="index.html">Back to INDEX</a><br><br>
+    <hr>
+
+    <!-- Indice -->
+    <h2>Indice</h2>
+    <h3> Tipos de selectores:</h3>
+      <ol>
+        <li><a href="#Elm_sel">Element selector</a>
+        <li><a href="#Clas_sel">Class selector</a>
+        <li><a href="#ID_selector">ID selector</a>
       </ol>
+
+    <h3> Agrupación de selectores:</h3>
+      <ol>
+        <li><a href="#Group">Group</a>
+      </ol>
+
+    <h3> Combinación de selectores:</h3>
+      <ol>
+        <li><a href="#Elm-w-class">Element with class</a>
+        <li><a href="#Child_sel">Child selector</a>
+        <li><a href="#Desc_sel">Descendant selector</a>
+      </ol>
+    <hr>
+    <h2>Ejemplos</h2>
+
+    <h4 id="Elm_sel">Element Selector</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Donec laoreet, metus non rutrum imperdiet, mauris metus
+    pharetra velit, et pulvinar neque nisl nec mauris. Nam maximus
+    ex vehicula, tincidunt ex non, aliquam dui. In mattis, nisl at
+    tincidunt tempus, odio felis suscipit ligula, eget vehicula
+    turpis metus eu ipsum. Vivamus semper ante et metus volutpat,
+    sit amet accumsan enim posuere. Mauris est odio, molestie ut
+    erat ac, commodo gravida turpis. Maecenas mi justo, varius
+    nec laoreet sed, pharetra in nibh. Sed suscipit hendrerit
+    tempus. Ut ut nibh at diam ullamcorper efficitur sed sit
+    amet elit. Etiam gravida consectetur tempus. Sed et orci
+    erat. Nam commodo luctus elit nec semper.</p>
+
+    <h4 id="Clas_sel">Class Selector</h4>
+    <p class="class_selector">Donec tincidunt quam at ante maximus condimentum. In hac
+    habitasse platea dictumst. Aenean sed metus ex. Quisque lacus
+    leo, feugiat ac nulla a, maximus dignissim ipsum. Suspendisse
+    dolor nisl, pretium quis magna nec, ornare consequat dolor.
+    Curabitur et vehicula tortor. <b>Pellentesque tempor scelerisque
+    molestie. Proin commodo risus a tempus tincidunt.</b> Aliquam erat
+    olutpat. Praesent sem nisi, laoreet quis ullamcorper non,
+    porttitor a risus. Nulla ipsum turpis, tincidunt quis nunc et,
+    facilisis fringilla orci. Pellentesque sit amet urna finibus,
+    aliquet metus et, venenatis quam. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Orci varius natoque penatibus et
+    magnis dis parturient montes, nascetur ridiculus mus.
+    Sed facilisis condimentum velit a maximus.</p>
+
+    <h4 id="ID_selector">ID Selector</h4>
+    <p id="ID_selector_marc">Qué va a pasar aqui? Va a mandar el style del
+      h4 o el del ID selector? In eu turpis hendrerit, finibus ligula
+      vitae, malesuada orci. Cras aliquet eros id accumsan
+      convallis. Vivamus tristique ac orci eu finibus. Aliquam
+      vulputate turpis eget rutrum maximus. Pellentesque ac nulla
+      faucibus, volutpat neque id, aliquet nulla. Duis quis enim
+      gravida, sagittis urna et, bibendum magna. Phasellus rutrum
+      ut est at commodo. Donec sed blandit justo. Aliquam ac
+      euismod erat, eu pretium eros. Pellentesque venenatis ligula
+      sem, faucibus suscipit odio imperdiet sit amet. In nunc sem,
+      elementum non velit quis, maximus mollis diam. Vestibulum
+      imperdiet fringilla est et imperdiet.</p>
+
+    <h4 id="Group">Group</h4>
+    <div class="uno">Más de lo anterior. Nam porttitor pretium nisi, ut
+      condimentum lorem laoreet quis. Nam felis metus, molestie
+      eu lectus sed, tincidunt cursus elit. Suspendisse interdum
+      gravida viverra. In nec risus vel arcu suscipit venenatis.
+      Maecenas a tristique ipsum. Ut sodales orci mauris, eget
+      dignissim lorem mattis vel. Phasellus eu rhoncus sapien.
+      Cras eu iaculis tortor.</div>
+
+    <h4 id="Elm-w-class">Element with Class Selector</h4>
+    <p class="Elm-w-class">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis laoreet nisl, et consequat lacus. Phasellus lectus eros, vulputate placerat auctor sit amet, elementum eget neque. Sed dictum, libero sit amet pharetra vulputate, purus dolor sodales dolor, at dictum ex massa at dolor. Vivamus sodales ipsum ut turpis ullamcorper gravida. Mauris ultricies posuere mauris, sit amet imperdiet mauris lacinia vel. Aenean et erat velit. Proin diam sapien, pretium eget arcu quis, feugiat dignissim turpis. Integer consequat rhoncus quam, nec tempor purus euismod id. Donec non erat venenatis magna sodales cursus.
+    </p>
+
+    <h4 id="Child_sel">Child Selector</h4>
+    <section>
+      <p>Nulla molestie justo nec libero interdum, a facilisis leo iaculis. Praesent laoreet purus sed magna fringilla luctus. Phasellus dui arcu, blandit nec sapien vel, faucibus convallis arcu. Vestibulum tempor augue et semper scelerisque. Curabitur vitae magna sit amet nisi pulvinar tincidunt sit amet sit amet tellus. Etiam quis sem sit amet augue blandit iaculis quis ut mi. Aliquam varius leo vel malesuada volutpat. Fusce non neque bibendum, consectetur quam nec, accumsan enim. Nullam fermentum est ligula, gravida vulputate erat luctus vitae. Maecenas ornare arcu sit amet lectus egestas vehicula. Nunc semper interdum ultricies. Mauris rutrum vehicula risus eu varius. Proin mattis, nunc ut pellentesque rhoncus, diam tortor varius sem, sit amet dictum erat leo in lorem.
+      </p>
+    </section>
+    <h4 id="Desc_sel">Descendant Selector</h4>
+    <div>
+      <p class="desc_sel">In sodales aliquam ante et sodales. Pellentesque tincidunt odio eu felis aliquam, non viverra urna rhoncus. Nulla nec dictum dolor. Vivamus cursus augue et laoreet porttitor. Fusce tristique sed tortor eu lobortis. Donec aliquam gravida laoreet. Aenean bibendum nisi eget luctus varius.
+    </div>
+    <hr>
+
+    Suspendisse dignissim dapibus euismod. Donec eu pellentesque urna. Etiam in tortor ut odio semper rhoncus. Morbi quis libero diam. Nam tincidunt mattis condimentum. Praesent quis lectus ac est condimentum finibus. Maecenas efficitur magna aliquam diam tempor, eget facilisis metus bibendum. Integer convallis tempus dui, non vestibulum elit mollis sit amet. Duis lectus metus, scelerisque sit amet nisl eget, fringilla ornare mauris. Proin sem urna, ornare at tortor lacinia, blandit lobortis augue. Aenean commodo ac sapien a aliquam. Suspendisse sit amet ligula augue. Nulla at luctus lectus. Mauris maximus tincidunt tempus.
+
+    Vivamus vulputate neque est, non feugiat felis vulputate nec. Nullam tincidunt molestie magna vel efficitur. Donec viverra quis augue sit amet tristique. Vivamus dapibus lacinia nibh. Nam odio turpis, rutrum et ex sit amet, laoreet bibendum felis. Donec ultricies finibus nisl, convallis pharetra elit ornare ut. Phasellus nibh sapien, gravida in molestie interdum, sodales ut velit. Sed eu leo malesuada, rutrum ligula et, porttitor massa. Pellentesque faucibus sagittis neque, et suscipit augue. Duis dapibus suscipit iaculis. Fusce suscipit neque tortor, eu vestibulum libero sollicitudin at.
+
+    Vestibulum consectetur augue dui, quis aliquam mi euismod ac. Maecenas sodales metus vel nisl tincidunt, pretium lobortis diam elementum. Donec nulla ligula, pulvinar vel lacus pharetra, feugiat venenatis purus. Sed facilisis, leo in vehicula semper, ante urna ultricies risus, nec laoreet erat nisi eget libero. Mauris massa nisl, finibus eu lectus eu, rhoncus tincidunt lorem. Suspendisse venenatis dictum mollis. Suspendisse enim erat, pellentesque ac orci tempor, condimentum vulputate massa. Suspendisse fermentum pulvinar lacus a blandit. Nulla ut venenatis nunc, a commodo libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus facilisis orci eu facilisis egestas. Integer a iaculis tellus, at malesuada urna.
+
+
+
+
+
+
+
 
 
 
